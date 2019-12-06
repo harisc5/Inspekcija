@@ -1,0 +1,38 @@
+﻿@model System.Data.DataTable
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>Detalji inspekcijske kontrole</h2>
+
+
+<hr />
+<br />
+
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>Ime Proizvoda</th>
+        <th>Serijski Broj</th>
+        <th>Zemlja Porijekla</th>
+        <th>Datum</th>
+        <th>Rezultat</th>
+
+
+    </tr>
+    @for (int i = 0; i < Model.Rows.Count; i++)
+    {
+        <tr>
+            <td>@Model.Rows[i][0]</td>
+            <td>@Model.Rows[i][1]</td>
+            <td>@Model.Rows[i][2]</td>
+            <td>@Model.Rows[i][3]</td>
+            <td>@Model.Rows[i][4]</td>
+
+
+
+        </tr>
+    }
+</table>
+
+<br />
+<a href="@Url.Action("Index","Home")">Povratak na početnu</a>

@@ -1,0 +1,40 @@
+﻿@model  System.Data.DataTable
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+    body {
+        background-image: url(../Images/lupa.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        color:black;
+        padding-right:45%;
+        padding-left: 30%;
+    }
+</style>
+
+<body>
+    </hr>
+    <h1>Inspekcijski sistem</h1>
+    
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>
+                <a href="@Url.Action("Index","Proizvod")">Pregled proizvoda</a>
+                <br />
+                <a href="@Url.Action("Index","Inspekcija")">Pregled inspekcija</a>
+                <br />
+                <a href="@Url.Action("Index","Kontrola")">Pregled kontrola</a>
+                <br />
+                <a href="@Url.Action("Create","PregledPoDatumu")">Pregled po datumu kontrola</a>
+                <br />
+                <a href="@Url.Action("Index","PregledKontrola")">Pregled detalja kontrole</a>
+
+
+
+
+            </th>
+        </tr>
+    </table>
+   
+</body>

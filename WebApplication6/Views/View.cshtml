@@ -1,0 +1,7 @@
+﻿@model Tuple<ProizvodModel, InspekcijaModel>
+
+@using (Html.BeginForm())
+{
+    @Html.TextBoxFor(tuple => tuple.Item1.ImeProizvoda)
+    
+}
